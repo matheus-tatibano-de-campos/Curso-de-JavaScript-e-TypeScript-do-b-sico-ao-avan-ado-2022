@@ -5,7 +5,7 @@ Operadores lógicos
 ! -> NOT -> NÂO
 */
 const expressaoAnd = true && true && true && true;
-const expressaoOr = true || false || true || false; 
+const expressaoOr = true || false || true || false;
 
 const usuario = 'Luiz';
 const senha = '123456';

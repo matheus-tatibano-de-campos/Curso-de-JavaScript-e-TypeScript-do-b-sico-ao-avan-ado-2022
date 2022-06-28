@@ -27,7 +27,7 @@ form.addEventListener('submit', function (e) {
   setResultado(msg, true);
 });
 
-function getNivelImc (imc) {
+function getNivelImc(imc) {
   const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso',
     'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3'];
 
@@ -39,17 +39,17 @@ function getNivelImc (imc) {
   if (imc < 18.5) return nivel[0];
 }
 
-function getImc (peso, altura) {
+function getImc(peso, altura) {
   const imc = peso / altura ** 2;
   return imc.toFixed(2);
 }
 
-function criaP () {
+function criaP() {
   const p = document.createElement('p');
   return p;
 }
 
-function setResultado (msg, isValid) {
+function setResultado(msg, isValid) {
   const resultado = document.querySelector('#resultado');
   resultado.innerHTML = '';
 

@@ -4,7 +4,7 @@ for (let valor of nomes) {
     console.log(valor);
 }
 
-nomes.forEach(function(valor, indice, ) {
-    console.log(valor, indice, );
-    
+nomes.forEach(function (valor, indice,) {
+    console.log(valor, indice,);
+
 });

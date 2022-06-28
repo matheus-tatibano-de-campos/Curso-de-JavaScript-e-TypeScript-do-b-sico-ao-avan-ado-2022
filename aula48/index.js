@@ -3,19 +3,19 @@ function falaOi() {
 }
 falaOi();
 
-const souUmDado = function() {
+const souUmDado = function () {
     console.log('sou um dado.');
 };
- souUmDado();
+souUmDado();
 
- const funcaoArrow = () => {
+const funcaoArrow = () => {
     console.log('sou um arrow function');
- };
- funcaoArrow();
+};
+funcaoArrow();
 
- const obj = {
+const obj = {
     falar() {
         console.log('estou falando');
     }
- };
- obj.falar();
+};
+obj.falar();

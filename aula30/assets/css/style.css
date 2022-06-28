@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --primary-color: rgb(67, 134, 173);
     --primary-color-darker: rgb(19, 57, 80);
@@ -7,16 +8,16 @@
 * {
     box-sizing: border-box;
     outline: 0;
-  
+
 }
 
 body {
-    margin:  0;
+    margin: 0;
     padding: 0;
     background: var(--primary-color);
     font-family: 'open sans' sans-serif;
-    font-size:  1.3em;
-    line-height: 1.5em; 
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 .container {
@@ -27,13 +28,17 @@ body {
     border-radius: 10px;
 }
 
-form input, form label, form button{
+form input,
+form label,
+form button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-};
+}
 
-form input{
+;
+
+form input {
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
@@ -43,17 +48,17 @@ form imput:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button{
+form button {
     border: none;
     background: var(--primary-color);
     color: #fff;
-    font-size:  18px;
-    font-weight:  700;
+    font-size: 18px;
+    font-weight: 700;
     height: 50px;
     cursor: pointer;
     margin-top: 30px;
 }
 
-form button:hover{
+form button:hover {
     background: var(--primary-color-darker);
 }

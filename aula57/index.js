@@ -1,15 +1,15 @@
 function Pessoa(nome, sobrenome) {
 
     const ID = 12345;
-    const metodoInterno = function(){
+    const metodoInterno = function () {
 
     };
 
-    
+
     this.nome = nome;
     this.sobrenome = sobrenome;
 
-    this.metodo = function() {
+    this.metodo = function () {
         console.log(this.nome + ': sou um método');
     };
 }

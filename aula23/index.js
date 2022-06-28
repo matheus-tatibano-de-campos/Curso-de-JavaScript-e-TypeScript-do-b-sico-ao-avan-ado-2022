@@ -19,4 +19,4 @@ const b = null;
 const c = 'false';
 const d = false;
 const e = NaN;
-console.log(a || b ||'Joaozino' || c || d || e);
+console.log(a || b || 'Joaozino' || c || d || e);

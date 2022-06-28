@@ -1,5 +1,5 @@
-function criaPessoa (nome, sobrenome, idade) {
-    return {nome, sobrenome, idade};
+function criaPessoa(nome, sobrenome, idade) {
+    return { nome, sobrenome, idade };
 }
 const pessoa1 = criaPessoa('luiz', 'Miranda', 25);
 const pessoa2 = criaPessoa('Lais', 'Tavares', 32);

@@ -7,7 +7,7 @@ function criaLi() {
   return li;
 }
 
-inputTarefa.addEventListener('keypress', function(e) {
+inputTarefa.addEventListener('keypress', function (e) {
   if (e.keyCode === 13) {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
@@ -37,18 +37,18 @@ function criaTarefa(textoInput) {
   salvarTarefas();
 }
 
-btnTarefa.addEventListener('click', function(e) {
+btnTarefa.addEventListener('click', function (e) {
   if (!inputTarefa.value) return;
   criaTarefa(inputTarefa.value);
 });
 
-document.addEventListener('click', function(e){
-const el = e.target;
+document.addEventListener('click', function (e) {
+  const el = e.target;
 
-if (el.classList.contains('apagar')){
-  el.parentElement.remove();
-  salvarTarefas();
-}
+  if (el.classList.contains('apagar')) {
+    el.parentElement.remove();
+    salvarTarefas();
+  }
 });
 
 function salvarTarefas() {
@@ -56,7 +56,7 @@ function salvarTarefas() {
   const listaDeTarefas = [];
 
   for (let tarefa of liTarefas) {
-   let tarefaTexto = tarefa.innerText;
+    let tarefaTexto = tarefa.innerText;
     tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
     listaDeTarefas.push(tarefaTexto);
   }
@@ -67,11 +67,11 @@ function salvarTarefas() {
 
 function adicionaTarefasSalvas() {
   const tarefas = localStorage.getItem('tarefas');
-const listaDeTarefas = JSON.parse(tarefas);
-  
-for (let tarefa of listaDeTarefas) {
-  criaTarefa(tarefa);
-}
+  const listaDeTarefas = JSON.parse(tarefas);
+
+  for (let tarefa of listaDeTarefas) {
+    criaTarefa(tarefa);
+  }
 }
 
 adicionaTarefasSalvas();

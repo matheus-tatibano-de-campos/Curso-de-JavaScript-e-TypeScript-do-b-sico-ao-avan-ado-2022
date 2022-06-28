@@ -1,4 +1,4 @@
-(function(idade, peso, altura) {
+(function (idade, peso, altura) {
     const sobrenome = 'miranda';
     function criaNome(nome) {
         return nome + ' ' + sobrenome;

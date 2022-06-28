@@ -4,20 +4,20 @@ let i = 0;
 do {
     let numero = numeros[i];
 
-    if (numero === 2 ) {
+    if (numero === 2) {
         console.log('pulei o número 2');
         i++;
         continue;
-        }
+    }
 
-        console.log(numero);
+    console.log(numero);
 
-        if (numero === 7) {
-            console.log('7 encontrado, saindo do laço..');
-            i++;
-            break;
-        }
-
+    if (numero === 7) {
+        console.log('7 encontrado, saindo do laço..');
         i++;
+        break;
+    }
+
+    i++;
 } while (i < numeros.length);
 

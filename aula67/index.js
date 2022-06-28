@@ -1,0 +1,11 @@
+const numeros = [5, 1, 2, 3, 8, 7, 50, 80, 11, 15, 22, 27];
+const numerosPares = numeros
+    .filter(valor => valor % 2 === 0)
+    .map(valor => valor * 2)
+    .reduce((ac, valor) => ac + valor);
+
+console.log(numerosPares);
+
+
+
+

@@ -1,4 +1,4 @@
-function zeroAEsquerda (num) {
+function zeroAEsquerda(num) {
     return num >= 10 ? num : `0${num}`;
 }
 
@@ -6,14 +6,14 @@ function zeroAEsquerda (num) {
 
 
 function formataData(data) {
-const dia = zeroAEsquerda (data.getDate());
-const mes = zeroAEsquerda(data.getMonth() + 1); // Mês começa do zero
-const ano = zeroAEsquerda(data.getFullYear());
-const hora = zeroAEsquerda(data.getHours());
-const min = zeroAEsquerda(data.getMinutes());
-const seg = zeroAEsquerda(data.getMinutes());
+    const dia = zeroAEsquerda(data.getDate());
+    const mes = zeroAEsquerda(data.getMonth() + 1); // Mês começa do zero
+    const ano = zeroAEsquerda(data.getFullYear());
+    const hora = zeroAEsquerda(data.getHours());
+    const min = zeroAEsquerda(data.getMinutes());
+    const seg = zeroAEsquerda(data.getMinutes());
 
-return `${dia}/${mes}/${ano}  ${hora}:${min}:${seg}`
+    return `${dia}/${mes}/${ano}  ${hora}:${min}:${seg}`
 }
 
 const data = new Date();

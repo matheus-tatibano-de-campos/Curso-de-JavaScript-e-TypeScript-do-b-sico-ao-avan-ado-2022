@@ -1,6 +1,6 @@
 function retornaHora(data) {
     if (data && !(data instanceof Date)) {
-throw new TypeError('Esperando instância de Date.');
+        throw new TypeError('Esperando instância de Date.');
     }
 
     if (!data) {
@@ -11,16 +11,16 @@ throw new TypeError('Esperando instância de Date.');
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12:false
+        hour12: false
     });
 }
 
 try {
 
-const data = new Date('01-01-1970 12:55:11');
-const hora = retornaHora();
-console.log(hora);
-} catch(e) {
+    const data = new Date('01-01-1970 12:55:11');
+    const hora = retornaHora();
+    console.log(hora);
+} catch (e) {
 } finally {
     console.log('tenha um bom dia');
 }
